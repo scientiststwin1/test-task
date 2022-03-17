@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
 
@@ -9,8 +8,6 @@ import Work from './pages/work';
 
 function App() {
   return (
-    <div className="App">
-
       <Routes>
 
         <Route path='/' element={<Home />}  />
@@ -22,8 +19,6 @@ function App() {
         <Route path='/work' element={<Work />} />
       
       </Routes>      
-      
-    </div>
   );
 }
 
