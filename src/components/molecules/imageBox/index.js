@@ -1,19 +1,28 @@
 import React from 'react';
 import ChainIcon from '../../atoms/icons/chainIcon';
 import Image from '../../atoms/image';
+import PropTypes from 'prop-types';
 
-const ImageBox = () => {
+const ImageBox = props => {
+
+  const { src, alt } = props;
+
   return (
-    <div className="relative border-2 border-red-800 w-80 h-52 m-12 hover: " >
+    <div className="relative group w-80 h-52 hover:cursor-pointer" >
 
-        <Image src={require('../../../assest/images/container_5.jpg')} className="w-full h-full block object-conver " />
+        <Image src={src} alt={alt} className="w-full h-full block object-conver " />
 
-        <div className='w-24 h-24 absolute top-1/2 left-1/2 flex justify-center items-center transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full '>
-          <ChainIcon className="fill-white w-11" />
+        <div className='w-20 h-20 absolute hidden top-1/2 left-1/2 group-hover:flex justify-center items-center transform -translate-x-1/2 -translate-y-1/2 bg-green-500 rounded-full '>
+          <ChainIcon className="fill-white w-10" />
         </div>
 
     </div>
   )
+}
+
+ImageBox.prototype = {
+  src: PropTypes.string,
+  alt: PropTypes.string,
 }
 
 export default ImageBox;
