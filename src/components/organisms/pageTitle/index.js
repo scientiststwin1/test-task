@@ -6,7 +6,7 @@ const PageTitle = props => {
     const { title } = props;
     
     return (
-        <div className="w-full bg-emerald-600 py-6">
+        <div className="w-full bg-green-500 py-6">
             <Subtitle className="w-[75vw] m-auto text-white font-bold text-xl">
                 {title}
             </Subtitle>
