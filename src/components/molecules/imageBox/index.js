@@ -8,7 +8,7 @@ const ImageBox = props => {
   const { src, alt } = props;
 
   return (
-    <div className="relative group w-80 h-52 hover:cursor-pointer" >
+    <div className="relative group w-full h-52 2xl:h-80 hover:cursor-pointer" >
 
         <Image src={src} alt={alt} className="w-full h-full block object-conver " />
 
