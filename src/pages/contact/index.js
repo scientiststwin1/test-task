@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 import TextArea from '../../components/atoms/textArea';
 import Input from '../../components/atoms/input';
 import Subtitle from '../../components/atoms/subtitle';
 import Text from '../../components/atoms/text';
 import Button from '../../components/atoms/button';
+import PageTitle from '../../components/organisms/pageTitle';
 
 const Contact = () => {
 
@@ -16,7 +17,7 @@ const Contact = () => {
 
   return (
     <div>
-
+      <PageTitle title="GOT A QUESTION OR INQUIRY?" />
       <div className="w-full flex flex-col items-center py-6 ">
         <div className='w-[75vw] grid grid-cols-[1.5fr_1fr] gap-x-12'>
 
@@ -66,7 +67,7 @@ const Contact = () => {
               <Subtitle> STORE HOURS </Subtitle>
 
               <div>
-                <div className='w-3/5 space-y-1'>
+                <div className='w-3/4 space-y-1'>
                   {
                     Object.keys(storeTimes).map(day => {
                       return (
