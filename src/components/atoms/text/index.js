@@ -1,13 +1,13 @@
-import classnames from 'classnames'
-import React from 'react'
-
+import classnames from 'classnames';
+import React from 'react';
+import PropTypes from 'prop-types'
 const Text = (props) => {
 
-    const { classNames, children } = props;
+    const { className, children } = props;
 
     const combineClassNames = classnames(
         'text-gray-500',
-        classNames
+        className
     )
 
     return (
@@ -15,4 +15,9 @@ const Text = (props) => {
     )
 }
 
-export default Text
+Text.prototype = {
+    className: PropTypes.string,
+    children: PropTypes.element,
+}
+
+export default Text;
