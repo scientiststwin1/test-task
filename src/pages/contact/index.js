@@ -19,7 +19,7 @@ const Contact = () => {
     <div>
       <PageTitle title="GOT A QUESTION OR INQUIRY?" />
       <div className="w-full flex flex-col items-center py-6 ">
-        <div className='w-[75vw] grid grid-cols-[1.5fr_1fr] gap-x-12'>
+        <div className='w-[75vw] grid grid-cols-[1.8fr_1fr] gap-x-12'>
 
           <div className='w-full space-y-3'>
             <Subtitle> CONTACT FORM </Subtitle>
@@ -67,7 +67,7 @@ const Contact = () => {
               <Subtitle> STORE HOURS </Subtitle>
 
               <div>
-                <div className='w-3/4 space-y-1'>
+                <div className='w-full space-y-1'>
                   {
                     Object.keys(storeTimes).map(day => {
                       return (
