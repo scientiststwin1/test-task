@@ -36,7 +36,7 @@ const Contact = () => {
 
           </div>
 
-          <div></div>
+          <div>
             <div className='space-y-3'>
               <Subtitle> CONTACT INFO </Subtitle>
               <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
@@ -83,12 +83,10 @@ const Contact = () => {
             </div>
 
           </div>
-
-
-
-
         </div>
+
       </div>
+    </div>
 
   )
 }
