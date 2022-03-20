@@ -17,7 +17,7 @@ const Subtitle = (props) => {
 
 Subtitle.prototype = {
   children: PropTypes.element,
-    
+  className: PropTypes.string
 }
 
 export default Subtitle;

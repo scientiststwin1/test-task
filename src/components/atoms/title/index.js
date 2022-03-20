@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-const Title = (props) => {
+const Title = props => {
 
-  const { childern } = props;
+  const { className, childern } = props;
 
   return (
-    <h1>{childern}</h1>
+    <h1 className={className}> {childern} </h1>
   )
 }
 
 Title.prototype = {
-  childern: PropTypes.element
-
+  childern: PropTypes.element,
+  className: PropTypes.string
 }
 
 export default Title;
