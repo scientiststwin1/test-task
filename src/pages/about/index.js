@@ -1,8 +1,9 @@
 import React from 'react';
 import Subtitle from '../../components/atoms/subtitle'
 import Text from '../../components/atoms/text';
-import ServiceBox from '../../components/molecules/serviceBox';
+import WorkServices from '../../components/organisms/workServices';
 import PageTitle from '../../components/organisms/pageTitle';
+import SettingsIcon from '../../components/atoms/icons/settingsIcon';
 
 const About = () => {
   return (
@@ -56,18 +57,12 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-full">
+      <div className="w-full space-y-6">
         <div className="w-[75vw] m-auto">
           <Subtitle>SERVICES</Subtitle>
         </div>
-
-        <div className="bg-gray-200">
-          <div className="w-[75vw] m-auto grid grid-cols-4 px-12 ">
-            <ServiceBox text="WEBSITES" />
-            <ServiceBox text="PHOTOGRAPHY" />
-            <ServiceBox text="SEO" />
-            <ServiceBox text="APPLICATIONS" />
-          </div>
+        <div>
+          <WorkServices />
         </div>
       </div>
 
