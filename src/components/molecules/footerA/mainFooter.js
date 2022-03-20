@@ -4,7 +4,7 @@ import HeadLine4 from '../../atoms/headLine4';
 
 const MainFooter = () => {
     return (
-        <div className='w-full flex justify-between text-xs text-main-gray'>
+        <footer className='w-full flex justify-between text-xs text-main-gray'>
             <HeadLine4>
                 COPYRIGHT 2013 DISPLAY ALL RIGHTS RESERVED
             </HeadLine4>
@@ -19,7 +19,7 @@ const MainFooter = () => {
                     <li> <Link to='/contact'> CONTACT </Link> </li>
                 </ul>
             </div>
-        </div>
+        </footer>
     )
 }
 
