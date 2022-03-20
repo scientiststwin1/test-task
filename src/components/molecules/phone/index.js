@@ -1,9 +1,12 @@
 import React from 'react';
 import Image from '../../atoms/image';
 
-const Phone = () => {
+const Phone = props => {
+
+  const { className } = props;
+
   return (
-    <div className='relative' >
+    <div className={className} >
         <Image className='absolute top-2 left-14 z-10' src={require('../../../assest/images/phone/camera_1.png')} alt="phone_camera" />
         <Image className='absolute top-6 left-11 z-10' src={require('../../../assest/images/phone/speaker.png')} alt="phone_speaker" />
         <Image className='absolute top-0 left-0' src={require('../../../assest/images/phone/frame_0.png')} alt="phone_frame" />
