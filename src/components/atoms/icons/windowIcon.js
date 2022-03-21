@@ -6,7 +6,7 @@ const WindowIcon = props => {
     return (
         <svg className={className} viewBox="0 0 100.000000 100.000000" preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none">
+                stroke="none">
                 <path d="M100 840 c-19 -19 -20 -33 -20 -340 0 -307 1 -321 20 -340 19 -19 33
                     -20 400 -20 367 0 381 1 400 20 19 19 20 33 20 340 0 307 -1 321 -20 340 -19
                     19 -33 20 -400 20 -367 0 -381 -1 -400 -20z m778 -62 l3 -38 -380 0 -381 0 0

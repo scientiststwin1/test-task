@@ -7,7 +7,7 @@ const SettingsIcon = props => {
         <svg className={className} viewBox="0 0 200.000000 200.000000" preserveAspectRatio="xMidYMid meet">
 
             <g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none">
+                stroke="none">
                 <path d="M1436 1934 c-9 -8 -16 -24 -16 -35 0 -31 -42 -45 -74 -24 -24 16 -28
                     16 -51 1 -14 -9 -32 -28 -42 -42 -15 -24 -15 -27 0 -54 24 -39 6 -80 -34 -80
                     -30 0 -39 -15 -39 -65 0 -50 9 -65 39 -65 41 0 58 -41 34 -81 l-17 -29 40 -41

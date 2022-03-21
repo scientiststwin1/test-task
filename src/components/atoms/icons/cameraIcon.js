@@ -8,7 +8,7 @@ const CameraIcon = props => {
         <svg className={className} viewBox="0 0 100.000000 100.000000" preserveAspectRatio="xMidYMid meet">
 
             <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none">
+                stroke="none">
                 <path d="M432 895 c-16 -14 -33 -36 -36 -50 -6 -23 -11 -25 -60 -25 -46 0 -54
                     3 -59 20 -5 19 -12 21 -89 18 -74 -3 -83 -5 -86 -23 -1 -11 -16 -28 -32 -37
                     -16 -9 -39 -32 -50 -50 -19 -31 -20 -50 -20 -279 0 -239 1 -247 23 -280 46
