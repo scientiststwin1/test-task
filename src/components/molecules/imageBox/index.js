@@ -2,13 +2,19 @@ import React from 'react';
 import ChainIcon from '../../atoms/icons/chainIcon';
 import Image from '../../atoms/image';
 import PropTypes from 'prop-types';
+import classnames from 'classnames'
 
 const ImageBox = props => {
 
-  const { src, alt } = props;
+  const { src, alt, className } = props;
+
+  const combineClasses = classnames(
+    'relative group w-full h-52 2xl:h-80 hover:cursor-pointer',
+    className
+  )
 
   return (
-    <div className="relative group w-full h-52 2xl:h-80 hover:cursor-pointer" >
+    <div className={combineClasses} >
 
         <Image src={src} alt={alt} className="w-full h-full block object-conver " />
 
