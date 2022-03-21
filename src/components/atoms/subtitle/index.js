@@ -6,7 +6,7 @@ const Subtitle = (props) => {
   const { children, className } = props;
 
   const combineClassNames =  classnames(
-    'font-bold text-lg',
+    'font-bold text-lg text-main-gray',
     className
     )
 
