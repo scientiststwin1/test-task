@@ -5,7 +5,7 @@ import Text from '../../atoms/text';
 
 const IntroduceSection = () => {
     return (
-        <div className=' bg-gray-200 py-10 box-content w-full h-52'>
+        <section className=' bg-gray-200 py-10 box-content w-full h-52'>
 
             <div className='w-[75%] m-auto h-full grid grid-cols-[1fr_1.5fr] gap-x-5' >
 
@@ -24,7 +24,7 @@ const IntroduceSection = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
 
