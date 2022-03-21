@@ -11,9 +11,9 @@ const MapContainer = props => {
             google={props.google}
             zoom={8}
             style={style}
-            initialCenter={{ lat: 47.444, lng: -122.176 }}
+            initialCenter={initialMapCenter}
         >
-            <Marker position={{ lat: 48.00, lng: -122.00 }} />
+            <Marker position={markerPosition} />
         </Map>
     )
 }
@@ -28,9 +28,9 @@ MapContainer.prototype = {
     initialMapCenter: PropTypes.shape({
         lat: PropTypes.number,
         lng: PropTypes.number,
-    }),
+    }).isRequired,
     markerPosition: PropTypes.shape({
         lat: PropTypes.number,
         lng: PropTypes.number,
-    }),
+    }).isRequired,
 }
