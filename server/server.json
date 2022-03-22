@@ -1,0 +1,40 @@
+{
+  "reach-us": [],
+  "work-sample": [
+    {
+      "name": "test1",
+      "image": "test.png",
+      "type": "print"
+    },
+    {
+      "name": "test1",
+      "image": "test.png",
+      "type": "photography"
+    },
+    {
+      "name": "test1",
+      "image": "test.png",
+      "type": "web"
+    },
+    {
+      "name": "test1",
+      "image": "test.png",
+      "type": "application"
+    },
+    {
+      "name": "test30",
+      "image": "t3030.png",
+      "type": "print"
+    },
+    {
+      "name": "alitwin",
+      "image": "alitwin.png",
+      "type": "photography"
+    },
+    {
+      "name": "web",
+      "image": "test.png",
+      "type": "web"
+    }
+  ]
+}
