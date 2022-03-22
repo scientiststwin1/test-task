@@ -9,9 +9,9 @@ const IntroduceSection = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <section className=' bg-gray-200 py-10 box-content w-full h-52'>
+        <section className=' bg-gray-200 py-10 box-content w-full '>
 
-            <div className='w-[75%] m-auto h-full grid grid-cols-[1fr_1.5fr] gap-x-5' >
+            <div className='w-[75%] m-auto grid grid-cols-1 grid-rows-[0.5fr_1fr] md:grid-rows-1 md:grid-cols-[1fr_1.5fr] gap-y-5 md:gap-y-0 md:gap-x-5' >
 
                 <div onClick={setIsOpen.bind(this, true)} className='bg-orange-400 flex justify-center items-center hover:cursor-pointer' >
                     <PlayIcon className="w-20 fill-stone-200" />
