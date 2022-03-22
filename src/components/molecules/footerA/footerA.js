@@ -4,7 +4,7 @@ import Subtitle from '../../atoms/subtitle';
 
 const FooterA = () => {
     return (
-        <div className="w-full flex flex-row justify-between items-center">
+        <div className="w-full flex flex-col md:flex-row space-y-4 md:space-y-0 justify-between items-center">
             <Subtitle className="text-white">
                 ARE YOU READY TO BE BLOWN AWAY?
             </Subtitle>
