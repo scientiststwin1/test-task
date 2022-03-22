@@ -6,3 +6,5 @@ class ContactService extends BaseService {
         super('/reach-us')
     }
 }
+
+export default ContactService;

@@ -6,3 +6,5 @@ class SampleWorkService extends BaseService {
         super('/work-sample')
     }
 }
+
+export default SampleWorkService;
