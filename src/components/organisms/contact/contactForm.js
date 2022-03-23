@@ -3,6 +3,7 @@ import TextArea from '../../atoms/textArea';
 import Input from '../../atoms/input';
 import Button from '../../atoms/button';
 import Text from '../../atoms/text';
+import Subtitle from '../../atoms/subtitle';
 import ContactService from '../../../service/contact.service';
 
 const contactService = new ContactService();
@@ -30,9 +31,10 @@ const ContactForm = () => {
             subject: subject,
             description: description,
         }).then(response => {
-            setInformation(description)
+            const resData = response.data
+            setInformation({ subject: resData.subject, description: resData.description })
         }).catch(error => {
-            alert("Failed submit form")
+            console.log("Failed submit form")
         })
     }
 
@@ -40,9 +42,15 @@ const ContactForm = () => {
     return (
         <>
             {information ?
-                <Text>
-                    {information}
-                </Text>
+                <div className='space-y-4'>
+                    <Subtitle>
+                        {information.subject}
+                    </Subtitle>
+
+                    <Text>
+                        {information.description}
+                    </Text>
+                </div>
                 :
                 <form className='space-y-3' onSubmit={handleSubmit} >
                     <Input onChange={updateState(setName)} required className="w-full md:w-3/4" type="text" placeholder="Name" />
