@@ -2,6 +2,8 @@ import React from 'react';
 import PageTitle from '../../components/organisms/pageTitle';
 import ContactSection from '../../components/organisms/contact';
 import MapContainer from '../../components/molecules/mapContainer';
+import { Helmet } from 'react-helmet';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 const Contact = () => {
 
@@ -13,15 +15,20 @@ const Contact = () => {
   }
 
   return (
-    <div>
+    <GoogleReCaptchaProvider reCaptchaKey='6Lc2rvIeAAAAAFFiEpnCOTMA66uGFpzHlGJ_nfB0'>
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Contact to Build studio company" />
+      </Helmet>
+
       <PageTitle title="GOT A QUESTION OR INQUIRY?" />
 
-      <section className='w-full h-96'>
-        <MapContainer 
-          style={{height: "24rem"}} 
-          initialMapCenter={{lat: 48.00 , lng: -132.00 }}
-          markerPosition={{lat: 48.00 , lng: -132.00 }}
-          />
+      <section className='w-full h-96 overflow-hidden relative'>
+        <MapContainer
+          style={{ height: "22rem" }}
+          initialMapCenter={{ lat: 48.00, lng: -132.00 }}
+          markerPosition={{ lat: 48.00, lng: -132.00 }}
+        />
       </section>
 
       <div className="w-full flex flex-col items-center py-6 ">
@@ -30,7 +37,7 @@ const Contact = () => {
         </section>
 
       </div>
-    </div>
+    </GoogleReCaptchaProvider>
 
   )
 }
