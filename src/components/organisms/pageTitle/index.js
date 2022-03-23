@@ -4,11 +4,11 @@ import Subtitle from '../../atoms/subtitle';
 const PageTitle = props => {
 
     const { title } = props;
-    
+
     return (
-        <div className="w-full bg-green-500 py-6">
-            <Subtitle className="container m-auto text-white font-bold text-xl">
-                {title}
+        <div className="w-full text-center md:text-left bg-green-500 py-6">
+            <Subtitle className="container m-auto text-slate-50 font-bold text-xl">
+                    {title}
             </Subtitle>
         </div>
     )
