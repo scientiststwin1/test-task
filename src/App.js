@@ -10,9 +10,17 @@ import Footer from './components/organisms/footer';
 import Header from './components/organisms/header';
 import NotFound from './pages/notFound';
 
+import { Helmet } from 'react-helmet';
+
 function App() {
   return (
     <>
+      <Helmet>
+        <title>Build Studio</title>
+        <meta name="description" content="Build studio company" />
+        <meta name="author" content="Ali Abbasi" />
+      </Helmet>
+
       <Header />
       <Routes>
 
