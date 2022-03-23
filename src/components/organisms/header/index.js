@@ -4,7 +4,7 @@ import HeaderNavbar from '../../molecules/header/headerNavbar';
 const Header = () => {
     return (
         <div className="w-full">
-            <footer className="w-[75vw] mx-auto">
+            <footer className="container mx-auto">
                 <div className="py-6">
                     <MainHeader />
                 </div>

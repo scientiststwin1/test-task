@@ -14,7 +14,7 @@ const HeaderNavbar = () => {
 
     return (
         <div>
-            <ul className='flex space-x-6 font-bold'>
+            <ul className='flex justify-center md:justify-start space-x-6 font-bold'>
                 {
                     pages.map(page => {
                         return (

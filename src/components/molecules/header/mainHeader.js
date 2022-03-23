@@ -7,7 +7,7 @@ import Image from '../../atoms/image';
 
 const MainHeader = () => {
 
-  const svgStyle = "w-8 fill-main-gray hover:fill-blue-500 hover:cursor-pointer"
+  const svgStyle = "w-6 md:w-8 xl:w-8 fill-main-gray hover:fill-blue-500 hover:cursor-pointer"
 
   return (
     <div className="flex justify-between">
@@ -19,7 +19,7 @@ const MainHeader = () => {
         <TwitterIcon className={svgStyle} />
         <FacebookIcon className={svgStyle} />
         <PinterestIcon className={svgStyle} />
-        <GooglePlusIcon className={`${svgStyle} w-9`} />
+        <GooglePlusIcon className={`${svgStyle} w-7 md:w-9`} />
         <Dribble className={svgStyle} />
       </div>
 
