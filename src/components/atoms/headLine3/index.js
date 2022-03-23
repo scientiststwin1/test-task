@@ -5,7 +5,7 @@ const HeadLine3 = props => {
     const { children, className } = props;
 
     const combineClassNames = classnames(
-        'font-bold text-lg',
+        'text-lg',
         className
     )
 
