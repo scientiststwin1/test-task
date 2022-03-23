@@ -15,7 +15,7 @@ const About = () => {
       </div>
 
       <div className="w-full space-y-4">
-        <div className="w-[75vw] m-auto">
+        <div className="container m-auto">
           <Subtitle>SERVICES</Subtitle>
         </div>
         <div>

@@ -4,8 +4,8 @@ import Subtitle from '../../atoms/subtitle'
 
 const AboutBusiness = () => {
     return (
-        <div className="w-[75vw] text-gray-500 m-auto py-3 divide-y-[2rem] divide-transparent ">
-            <div className="w-full grid grid-cols-[40%_57%] justify-between  ">
+        <div className="container text-gray-500 m-auto py-3 divide-y-[2rem] divide-transparent ">
+            <div className="w-full grid grid-cols-1 space-y-6 xl:grid-cols-[40%_57%] justify-between  ">
                 <div>
                     <Image src={require('../../../assest/images/clerk.png')} />
 
@@ -33,7 +33,7 @@ const AboutBusiness = () => {
                 </div>
             </div>
 
-            <div className="w-full grid grid-cols-[48%_48%] justify-between">
+            <div className="w-full grid grid-cols-1 space-y-4 xl:grid-cols-[48%_48%] justify-between">
                 <div className="space-y-4">
                     <Subtitle className="font-bold">MISSION STATEMENT </Subtitle>
                     <Text>
