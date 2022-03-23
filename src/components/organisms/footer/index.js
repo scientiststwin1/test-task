@@ -1,12 +1,12 @@
-import FooterA from '../../molecules/footerA/footerA';
-import MainFooter from '../../molecules/footerA/mainFooter';
+import SubFooter from '../../molecules/footer/subFooter';
+import MainFooter from '../../molecules/footer/mainFooter';
 
 const Footer = () => {
     return (
         <div className='w-full'>
             <div className='w-full py-6 md:py-8 bg-zinc-800'>
                 <div className='container mx-auto'>
-                    <FooterA />
+                    <SubFooter />
                 </div>
             </div>
 

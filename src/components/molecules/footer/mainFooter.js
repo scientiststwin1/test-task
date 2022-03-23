@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import FooterA from './footerA';
 import HeadLine4 from '../../atoms/headLine4';
 
 const MainFooter = () => {
