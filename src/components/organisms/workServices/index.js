@@ -82,7 +82,7 @@ const WorkServices = () => {
     return (
         <div className='space-y-6'>
             <div className="bg-gray-200">
-                <div className="w-[75vw] m-auto grid grid-cols-4 ">
+                <div className="container m-auto grid grid-cols-2 md:grid-cols-4">
                     {
                         services.map(service =>
                             <ServiceBox
@@ -94,7 +94,7 @@ const WorkServices = () => {
                     }
                 </div>
             </div>
-            <div className="w-[75vw] m-auto space-y-4">
+            <div className="container m-auto space-y-4">
                 <div>
                     <Text> {serviceInfo.description} </Text>
                 </div>
