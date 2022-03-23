@@ -5,6 +5,8 @@ import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 const MapContainer = props => {
     const { style, initialMapCenter, markerPosition } = props
 
+    console.log(" ->> ", process.env.REACT_APP_GOOGLE_MAP_TOKEN)
+
     return (
 
         <Map
@@ -20,7 +22,7 @@ const MapContainer = props => {
 
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyBZjxxF9LN5uQ8ekUPYRcc2qjAUAR2Gfas'
+    apiKey: process.env.REACT_APP_GOOGLE_MAP_TOKEN
 })(MapContainer);
 
 MapContainer.prototype = {

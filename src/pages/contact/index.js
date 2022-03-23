@@ -5,7 +5,10 @@ import MapContainer from '../../components/molecules/mapContainer';
 import { Helmet } from 'react-helmet';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
+
 const Contact = () => {
+
+  const reCaptchaKey = process.env.REACT_APP_RECAPTCHA_TOKEN
 
   const storeTimes = {
     'Monday - Thursday': '8 am - 5 pm',
@@ -15,7 +18,7 @@ const Contact = () => {
   }
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey='6Lc2rvIeAAAAAFFiEpnCOTMA66uGFpzHlGJ_nfB0'>
+    <GoogleReCaptchaProvider reCaptchaKey={reCaptchaKey}>
       <Helmet>
         <title>Contact</title>
         <meta name="description" content="Contact to Build studio company" />
