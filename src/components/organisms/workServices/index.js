@@ -82,10 +82,11 @@ const WorkServices = () => {
     return (
         <div className='space-y-6'>
             <div className="bg-gray-200">
-                <div className="container m-auto grid grid-cols-2 md:grid-cols-4">
+                <div className="w-full md:container m-auto grid grid-cols-2 md:grid-cols-4">
                     {
                         services.map(service =>
                             <ServiceBox
+                                selected={service.name == serviceInfo.name}
                                 key={service.name}
                                 icon={service.icon}
                                 text={service.name}
