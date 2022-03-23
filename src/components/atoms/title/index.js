@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 
 const Title = props => {
 
-  const { className, childern } = props;
+  const { className, children } = props;
 
   return (
-    <h1 className={className}> {childern} </h1>
+    <h1 className={className}> {children} </h1>
   )
 }
 
