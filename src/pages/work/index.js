@@ -9,7 +9,10 @@ import classnames from 'classnames';
 
 const Work = () => {
 
+  const allCategories = ["all", "print", "photography", "web", "applications"]
+
   const [layout, setLayout] = useState('grid')
+  const [category, setCategory] = useState("all")
 
   const setLayoutToGrid = () => setLayout('grid')
 
@@ -17,13 +20,27 @@ const Work = () => {
 
   const gridIconStyle = classnames(
     'w-6 fill-gray-500',
-    {'fill-main-green': layout === 'grid'}
+    { 'fill-main-green': layout === 'grid' }
   )
 
   const listIconStyle = classnames(
     'w-6 fill-gray-500',
-    {'fill-main-green': layout === 'list'}
+    { 'fill-main-green': layout === 'list' }
   )
+
+  const isSelectedStyle = a => classnames("cursor-pointer", { "text-main-green": a === category })
+
+  const categoieElement = allCategories.map((category, index) => {
+    return (
+      <>
+        <div onClick={setCategory.bind(this, category)} className={isSelectedStyle(category)}>
+          {category.toUpperCase()}
+        </div>
+        {allCategories.length - 1 !== index && <span> / </span>}
+      </>
+    )
+
+  })
 
   return (
 
@@ -37,19 +54,11 @@ const Work = () => {
       <div className='container m-auto' >
         <div className='flex justify-between items-center mb-6 md:mb-8' >
           <HeadLine3 className="flex overflow-x-auto space-x-1 md:space-x-2 text-gray-500 ">
-            <div className="text-main-green"> ALL</div>
-            <span> / </span>
-            <div> PRINT </div>
-            <span> / </span>
-            <div> PHOTOGRAPHY </div>
-            <span> / </span>
-            <div> WEBS </div>
-            <span> / </span>
-            <div> APPLICATIONS </div>
+            {categoieElement}
           </HeadLine3>
           <div className='hidden md:flex space-x-2' >
             <GridIcon className={gridIconStyle} onClick={setLayoutToGrid} />
-            <ListIcon className={listIconStyle} onClick={setLayoutToList}/>
+            <ListIcon className={listIconStyle} onClick={setLayoutToList} />
           </div>
         </div>
         <WorkSamples layout={layout} />
