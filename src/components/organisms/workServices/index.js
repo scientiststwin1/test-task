@@ -79,20 +79,29 @@ const WorkServices = () => {
         setServiceInfo(selectedService)
     }
 
+    const servicesBoxElement = services.map(service =>
+        <ServiceBox
+            selected={service.name == serviceInfo.name}
+            key={service.name}
+            icon={service.icon}
+            text={service.name}
+            onClick={onServiceHandller.bind(this, service.name)}
+        />)
+
+    const serviceKeyInformation = serviceInfo.items.map(serviceItem => {
+        return (
+            <li key={serviceItem} className="flex text-main-gray">
+                <ArrowRightIcon className="w-5" />
+                {serviceItem}
+            </li>
+        )
+    })
+
     return (
         <div className='space-y-6'>
             <div className="bg-gray-200">
                 <div className="w-full md:container m-auto grid grid-cols-2 md:grid-cols-4">
-                    {
-                        services.map(service =>
-                            <ServiceBox
-                                selected={service.name == serviceInfo.name}
-                                key={service.name}
-                                icon={service.icon}
-                                text={service.name}
-                                onClick={onServiceHandller.bind(this, service.name)}
-                            />)
-                    }
+                    {servicesBoxElement}
                 </div>
             </div>
             <div className="container m-auto space-y-4">
@@ -101,16 +110,7 @@ const WorkServices = () => {
                 </div>
                 <div>
                     <ul className='pl-6'>
-                        {
-                            serviceInfo.items.map(serviceItem => {
-                                return (
-                                    <li key={serviceItem} className="flex text-main-gray">
-                                        <ArrowRightIcon className="w-5" />
-                                        {serviceItem}
-                                    </li>
-                                )
-                            })
-                        }
+                        { serviceKeyInformation }
                     </ul>
                 </div>
             </div>
