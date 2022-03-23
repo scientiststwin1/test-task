@@ -161,7 +161,7 @@ const WorkSamples = props => {
     const [sample, setSample] = useState(sampleWorks.slice(0, 6))
     const [hasMore, setHasMore] = useState(true)
 
-    const gridCol = layout === 'grid' ? 'grid-cols-3' : 'grid-cols-1';
+    const gridCol = layout === 'grid' ? 'md:grid-cols-3' : 'md:grid-cols-1';
 
     const loadMore = page => {
         if (page * 6 < sampleWorks.length)
@@ -179,7 +179,7 @@ const WorkSamples = props => {
                 loadMore={loadMore}
                 hasMore={hasMore}
                 loader={<div className="loader" key={0}>Loading ...</div>}
-                className={`w-full grid grid-cols-1 md:${gridCol} gap-x-3 gap-y-3`}
+                className={`w-full grid ${gridCol} grid-cols-1 gap-x-3 gap-y-3`}
             >
 
                 {
@@ -195,7 +195,6 @@ const WorkSamples = props => {
 
 WorkSamples.prototype = {
     layout: PropTypes.oneOf(['grid', 'list']),
-    items: PropTypes.array,
 }
 
 export default WorkSamples;

@@ -36,17 +36,17 @@ const Work = () => {
       <PageTitle title="CHECK OUT WHAT I CAN DO" />
       <div className='container m-auto' >
         <div className='flex justify-between items-center mb-6 md:mb-8' >
-          <div className="flex overflow-x-auto space-x-1 md:space-x-2 text-gray-500 ">
-            <HeadLine3> ALL</HeadLine3>
+          <HeadLine3 className="flex overflow-x-auto space-x-1 md:space-x-2 text-gray-500 ">
+            <div className="text-main-green"> ALL</div>
             <span> / </span>
-            <HeadLine3> PRINT </HeadLine3>
+            <div> PRINT </div>
             <span> / </span>
-            <HeadLine3> PHOTOGRAPHY </HeadLine3>
+            <div> PHOTOGRAPHY </div>
             <span> / </span>
-            <HeadLine3> WEBS </HeadLine3>
+            <div> WEBS </div>
             <span> / </span>
-            <HeadLine3> APPLICATIONS </HeadLine3>
-          </div>
+            <div> APPLICATIONS </div>
+          </HeadLine3>
           <div className='hidden md:flex space-x-2' >
             <GridIcon className={gridIconStyle} onClick={setLayoutToGrid} />
             <ListIcon className={listIconStyle} onClick={setLayoutToList}/>
