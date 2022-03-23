@@ -28,7 +28,7 @@ const Work = () => {
     { 'fill-main-green': layout === 'list' }
   )
 
-  const isSelectedStyle = a => classnames("cursor-pointer", { "text-main-green": a === category })
+  const isSelectedStyle = a => classnames("cursor-pointer font-medium", { "text-main-green": a === category })
 
   const categoieElement = allCategories.map((category, index) => {
     return (
