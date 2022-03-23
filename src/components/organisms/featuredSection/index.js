@@ -20,12 +20,21 @@ const FeaturedSection = () => {
         slidesToShow: 3,
         speed: 500,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    centerPadding: "50px",
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
     return (
         <section className='py-10  ' >
             <div className='w-full text-center' >
                 <Subtitle>A COUPLE OF OUR FEATURED PROJECTS</Subtitle>
-                <Text className='w-1/2 m-auto my-4' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                <Text className='w-11/12 md:w-1/2 m-auto my-4' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
             </div>
             <div className='py-10' >
                 <Slider ref={slider} {...settings}>
@@ -36,7 +45,7 @@ const FeaturedSection = () => {
                     <ImageBox className='px-2' src={require('../../../assest/images/container_9.jpg')} />
                 </Slider>
             </div>
-            <div className='w-1/2 m-auto flex' >
+            <div className='w-11/12 md:w-1/2 m-auto flex' >
                 <ArrowLeftIcon onClick={() => slider.current.slickPrev()} className='w-24 fill-main-gray hover:fill-main-green hover:cursor-pointer' />
                 <div className='flex flex-col justify-center items-center space-y-5 ' >
                     <Subtitle>DARK UI KIT FREEBIE</Subtitle>
