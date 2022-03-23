@@ -7,8 +7,7 @@ const Contact = props => {
     const { storeTimes } = props
 
     return (
-        <div className='w-[75vw] py-4 grid grid-cols-[1.8fr_1fr] gap-x-12'>
-
+        <div className='w-full py-4 grid space-y-6 md:space-y-0 grid-cols-1 md:grid-cols-[1.8fr_1fr] gap-x-12'>
             <div className='w-full space-y-4'>
                 <Subtitle> CONTACT FORM </Subtitle>
 

@@ -25,7 +25,7 @@ const Contact = () => {
       </section>
 
       <div className="w-full flex flex-col items-center py-6 ">
-        <section className='w-[75vw] '>
+        <section className='container'>
           <ContactSection storeTimes={storeTimes} />
         </section>
 

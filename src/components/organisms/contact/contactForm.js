@@ -45,9 +45,9 @@ const ContactForm = () => {
                 </Text>
                 :
                 <form className='space-y-3' onSubmit={handleSubmit} >
-                    <Input onChange={updateState(setName)} required className="w-3/4" type="text" placeholder="Name" />
-                    <Input onChange={updateState(setEmail)} required className="w-3/4" type="email" placeholder="Email Address" />
-                    <Input onChange={updateState(setSubject)} className="w-3/4" type="text" placeholder="Subject" />
+                    <Input onChange={updateState(setName)} required className="w-full md:w-3/4" type="text" placeholder="Name" />
+                    <Input onChange={updateState(setEmail)} required className="w-full md:w-3/4" type="email" placeholder="Email Address" />
+                    <Input onChange={updateState(setSubject)} className="w-full md:w-3/4" type="text" placeholder="Subject" />
                     <TextArea onChange={updateState(setdescription)} required maxlength="1000" className="w-full h-48 " ></TextArea>
 
                     <Button type="submit" size="sm">SEND MESSAGE</Button>
