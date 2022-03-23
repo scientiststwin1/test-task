@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server ./server.json --port 8000"
+    "start": "json-server ./server.json --no-cors true --port 8000"
   },
   "author": "",
   "license": "ISC",
