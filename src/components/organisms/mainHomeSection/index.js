@@ -16,9 +16,9 @@ const MainHomeSection = () => {
             <Phone className='translate-x-60 md:translate-x-2/3 2xl:translate-x-[62%] translate-y-44' />
           </div>
         </div>
-        <div className='py-20 container md:w-1/2 m-auto space-y-5' >
+        <div className='flex flex-col items-center justify-center py-20 container md:w-1/2 m-auto space-y-5' >
           <Text className='text-center animate-[showElement_3s_ease-in-out_1]' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
-          <Button size='md' type='submit' className='animate-[showElement_4s_ease-in-out_1]' >BROWSE PORTFOLIO</Button>
+           <Button size='md' type='submit' className='animate-[showElement_4s_ease-in-out_1]' >BROWSE PORTFOLIO</Button>
         </div>
       </section>
   )
