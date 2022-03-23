@@ -5,6 +5,7 @@ import Button from '../../atoms/button';
 import Text from '../../atoms/text';
 import Subtitle from '../../atoms/subtitle';
 import ContactService from '../../../service/contact.service';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 
 const contactService = new ContactService();
 
@@ -17,20 +18,27 @@ const ContactForm = () => {
 
     const [information, setInformation] = useState(null)
 
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
     const updateState = setState => event => {
         event.preventDefault();
         setState(event.target.value)
     }
 
-    const handleSubmit = event => {
+    const handleSubmit = async event => {
         event.preventDefault();
 
-        contactService.create({
+        const token = await executeRecaptcha('secret')
+
+        const data = {
             name: name,
             email: email,
             subject: subject,
             description: description,
-        }).then(response => {
+            token
+        }
+
+        contactService.create(data).then(response => {
             const resData = response.data
             setInformation({ subject: resData.subject, description: resData.description })
         }).catch(error => {
