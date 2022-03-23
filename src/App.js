@@ -8,12 +8,15 @@ import Work from './pages/work';
 
 import Footer from './components/organisms/footer';
 import Header from './components/organisms/header';
+import NotFound from './pages/notFound';
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
+
+        <Route path="*" element={<NotFound />} />
 
         <Route path='/' element={<Home />} />
 
