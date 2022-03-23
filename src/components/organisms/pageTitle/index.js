@@ -7,7 +7,7 @@ const PageTitle = props => {
     
     return (
         <div className="w-full bg-green-500 py-6">
-            <Subtitle className="w-[75vw] m-auto text-white font-bold text-xl">
+            <Subtitle className="container m-auto text-white font-bold text-xl">
                 {title}
             </Subtitle>
         </div>
